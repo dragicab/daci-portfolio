@@ -7,13 +7,11 @@ const portfolioData = {
   name: "Dragica Bosnakova",
   title: "Creative Developer & Designer",
   bio: "Passionate about crafting beautiful digital experiences with a blend of creativity and code. I turn ideas into elegant solutions.",
-  email: "hello@alexjohnson.dev",
-  location: "San Francisco, CA",
+  email: "dragica.bosnakova@gmail.com",
+  location: "Skopje, North Macedonia",
   social: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-    dribbble: "https://dribbble.com",
+    github: "https://github.com/dragicab",
+    linkedin: "https://www.linkedin.com/in/dragica-boshnakova-0633b4305/",
   },
   skills: [
     { name: "React", level: 95 },
@@ -216,8 +214,6 @@ export default function Home() {
                 <span className="text-gray-600 group-hover:text-white text-xl">
                   {platform === 'github' && '💻'}
                   {platform === 'linkedin' && '💼'}
-                  {platform === 'twitter' && '🐦'}
-                  {platform === 'dribbble' && '🎨'}
                 </span>
               </a>
             ))}
@@ -431,8 +427,6 @@ export default function Home() {
                   <span className="text-xl">
                     {platform === 'github' && '💻'}
                     {platform === 'linkedin' && '💼'}
-                    {platform === 'twitter' && '🐦'}
-                    {platform === 'dribbble' && '🎨'}
                   </span>
                 </a>
               ))}
