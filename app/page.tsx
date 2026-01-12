@@ -6,89 +6,87 @@ import { useEffect, useState } from 'react';
 const portfolioData = {
   name: "Dragica Bosnakova",
   title: "Creative Developer & Designer",
-  bio: "Passionate about crafting beautiful digital experiences with a blend of creativity and code. I turn ideas into elegant solutions.",
-  email: "dragica.bosnakova@gmail.com",
+  bio: "Graduate software engineer passionate about building innovative solutions and turning complex problems into elegant code. Always eager to learn, grow, and contribute to meaningful projects.",
+  email: "dragicabosnakova@gmail.com",
   location: "Skopje, North Macedonia",
   social: {
     github: "https://github.com/dragicab",
     linkedin: "https://www.linkedin.com/in/dragica-boshnakova-0633b4305/",
   },
   skills: [
-    { name: "React", level: 95 },
-    { name: "TypeScript", level: 90 },
-    { name: "Next.js", level: 92 },
-    { name: "Node.js", level: 85 },
-    { name: "UI/UX Design", level: 88 },
-    { name: "Figma", level: 90 },
+    
+    { name: "Python" },
+    { name: "Java" },
+    { name: "Java SpringBoot" },
+    { name: "Docker" },
+    { name: "C, C++, C#" },
+    { name: ".NET, .NET CORE" },
+    { name: "Figma" },
+    { name: "HTML, CSS, Bootstrap" },
+    { name: "SQL" },
   ],
   projects: [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce solution with real-time inventory management and seamless payment integration.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "🛍️",
+      title: "Dialect Detection in Macedonian Speech Using Graph Neural Networks",
+      description: "Bachelor Thesis Project: Developed a system for recognizing Macedonian dialects using Graph Neural Networks (GNNs). Collected and pre-processed audio recordings and text samples from different dialect regions, designed multimodal representations combining speech and textual features, and implemented GNN-based models to classify and evaluate dialectal varieties on real-world linguistic data.",
+      tech: ["Python", "Graph Neural Networks", "Audio Processing", "NLP"],
+      image: "🧠",
       color: "from-pink-500 to-rose-500",
+      github: "https://github.com/dragicab/dialect-detection",
     },
     {
       id: 2,
-      title: "Social Media Dashboard",
-      description: "Beautiful analytics dashboard for managing multiple social media accounts with real-time insights.",
-      tech: ["Next.js", "TypeScript", "Chart.js"],
-      image: "📊",
+      title: "Happy Kitchen – 2D Game Development Project",
+      description: "Collaborative Creative Project: Designed and implemented a colorful 2D game where players combine ingredients to create unique fusion dishes in a playful kitchen environment. The project focuses on game logic, user interaction, creative gameplay mechanics, and engaging visual design to deliver an entertaining gaming experience.",
+      tech: ["Python", "Game Development", "2D Graphics", "Game Logic"],
+      image: "🎮",
       color: "from-fuchsia-500 to-pink-500",
+      github: "https://github.com/dragicab/happy-kitchen",
     },
     {
       id: 3,
-      title: "Task Management App",
-      description: "Collaborative task management tool with drag-and-drop functionality and team collaboration features.",
-      tech: ["React", "Firebase", "Tailwind CSS"],
-      image: "📝",
+      title: "Fingerprint Image Descriptor Generation and Comparison Algorithm",
+      description: "Individual University Project: Developed a Python-based algorithm to generate unique descriptors for fingerprint images and compare two fingerprint samples by analyzing and matching key visual features. The system processes biometric data to identify patterns and create reliable identification mechanisms for security applications.",
+      tech: ["Python", "Image Processing", "Computer Vision"],
+      image: "🔐",
       color: "from-rose-400 to-pink-600",
+      github: "https://github.com/dragicab/dpns",
     },
     {
       id: 4,
-      title: "Weather Forecast App",
-      description: "Elegant weather application with location-based forecasts and beautiful weather animations.",
-      tech: ["Vue.js", "OpenWeather API", "CSS3"],
-      image: "☁️",
+      title: "Wineries Application – Winery Ratings and Reviews Platform",
+      description: "Collaborative University Project: Created a comprehensive web application showcasing wineries across North Macedonia. The application provides users with detailed information about each winery, including descriptions, ratings, reviews, and comments. Implemented user authentication, developed the backend using Java Spring Boot, and utilized RESTful APIs for seamless data management and responsive user interaction.",
+      tech: ["Java", "Spring Boot", "RESTful APIs"],
+      image: "🍷",
       color: "from-pink-400 to-purple-500",
+      github: "https://github.com/ElenaS2332/dians-task-titans",
     },
     {
       id: 5,
-      title: "Music Streaming Platform",
-      description: "A sleek music streaming service with playlist management and social sharing capabilities.",
-      tech: ["React Native", "Spotify API", "GraphQL"],
-      image: "🎵",
+      title: "Deployment & Orchestration of a MERN Application Using Docker and Kubernetes",
+      description: "Individual University Project: Implemented a full deployment workflow for a containerized MERN application using Docker and Kubernetes. Built and optimized Docker images, configured multi-service orchestration with Docker Compose, integrated MongoDB, and deployed to a Kubernetes cluster with separate deployments ensuring scalability. Established a CI/CD pipeline to automate build, testing, and deployment processes.",
+      tech: ["Docker", "Kubernetes", "MERN", "MongoDB", "CI/CD"],
+      image: "🐳",
       color: "from-rose-500 to-fuchsia-600",
+      github: "https://github.com/dragicab/kiii",
     },
     {
       id: 6,
-      title: "Portfolio Website",
-      description: "Modern portfolio website with smooth animations and responsive design for creative professionals.",
-      tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
-      image: "✨",
-      color: "from-pink-500 to-purple-600",
+      title: "EduQuiz – Educational Quiz Platform",
+      description: "Collaborative University Project: Developed an educational quiz platform within a simulated real-world software company environment to support interactive learning through quizzes. My contribution focused on UI/UX design, emphasizing intuitive interface creation, clear navigation, and user-friendly learning experiences that encourage engagement and accessibility for all users.",
+      tech: ["UI/UX Design", "Web Development", "User Interface"],
+      image: "📚",
+      color: "from-pink-500 to-rose-500",
+      github: "https://github.com/damceskiandrej/IKT-Project",
     },
   ],
   experience: [
     {
-      company: "Tech Innovations Inc.",
-      role: "Senior Frontend Developer",
-      period: "2022 - Present",
-      description: "Leading frontend development initiatives and mentoring junior developers.",
-    },
-    {
-      company: "Creative Studios",
-      role: "Full Stack Developer",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple web applications for diverse clients.",
-    },
-    {
-      company: "Startup Labs",
-      role: "Junior Developer",
-      period: "2018 - 2020",
-      description: "Built responsive web interfaces and collaborated on various projects.",
+      company: "xSoft",
+      role: "UI/UX Designer Intern",
+      period: "February 2025 - May 2025",
+      description: "Developed and styled various website sections using HTML, CSS, and Bootstrap, collaborated with the team to fix layout inconsistencies and improve responsiveness, and used Figma to design UI components and translate visual concepts into functional website elements.",
     },
   ],
 };
@@ -144,7 +142,6 @@ export default function Home() {
               onClick={() => scrollToSection('home')}
               className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent hover:scale-105 transition-transform"
             >
-              AJ
             </button>
             <div className="hidden md:flex gap-8">
               {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => {
@@ -231,17 +228,16 @@ export default function Home() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-pink-400 to-rose-500 rounded-3xl blur-3xl opacity-30"></div>
               <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-2xl">
-                <div className="text-8xl mb-6">🎨</div>
+                
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">Creative Problem Solver</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   I love turning complex problems into simple, beautiful, and intuitive solutions.
-                  With over 5 years of experience in web development, I've had the privilege of
-                  working with amazing teams and creating products that users love.
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  When I'm not coding, you can find me exploring new design trends, contributing
-                  to open-source projects, or sharing knowledge with the developer community.
-                </p>
+                  My interests focus on artificial intelligence, machine learning, and the development of data-driven software systems.
+<br/><br/>
+Through academic and independent projects, I have gained experience in designing, implementing, and evaluating software solutions across multiple domains, including AI research, web development, game development, and system-level engineering. I have worked with neural networks, transformer-based models, and modern software architectures, combining theoretical knowledge with practical implementation.
+<br/><br/>I am particularly motivated by projects that require analytical thinking, structured problem-solving, and interdisciplinary approaches, especially those that connect research concepts with real-world applications     </p>
+                
+                
               </div>
             </div>
             <div className="space-y-6">
@@ -289,16 +285,7 @@ export default function Home() {
                 className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="flex justify-between items-center mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">{skill.name}</h3>
-                  <span className="text-pink-600 font-bold">{skill.level}%</span>
-                </div>
-                <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-gradient-to-r from-pink-500 to-rose-500 rounded-full transition-all duration-1000"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-800">{skill.name}</h3>
               </div>
             ))}
           </div>
@@ -318,14 +305,16 @@ export default function Home() {
             {portfolioData.projects.map((project, index) => (
               <div
                 key={project.id}
-                className="group bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="group bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col h-full"
               >
-                <div className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-300`}>
+                <div className="h-48 bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                   {project.image}
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
+                <div className="p-6 flex flex-col flex-grow min-h-[400px]">
+                  <div className="h-28 mb-3 flex items-start">
+                    <h3 className="text-2xl font-bold text-gray-800 ">{project.title}</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4 leading-relaxed flex-grow min-h-[80px]">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
                       <span
@@ -336,9 +325,14 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                  <button className="w-full py-2 bg-gradient-to-r from-pink-600 to-rose-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-2 bg-gradient-to-r from-pink-600 to-rose-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 mt-auto text-center block"
+                  >
                     View Project
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
